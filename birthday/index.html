@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11110f">
+  <meta name="description" content="Davido the Developer celebrates October 10, 2026. A new chapter begins.">
+  <title>10/10 — DAVIDO THE DEVELOPER</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="ambient-glow" aria-hidden="true"></div>
+  <div class="pointer-glow" aria-hidden="true"></div>
+
+  <div class="intro" id="intro" aria-label="Welcome to David Mutua's birthday experience">
+    <div class="intro-stars" aria-hidden="true"></div>
+    <div class="intro-content">
+      <p class="intro-kicker">YOU'RE INVITED TO</p>
+      <h2>WELCOME TO<br><em>MY WORLD.</em></h2>
+      <p class="intro-date">10 <span>·</span> 10 <span>·</span> 2026</p>
+      <button class="intro-enter" id="intro-enter" type="button">ENTER EXPERIENCE <span aria-hidden="true">→</span></button>
+    </div>
+    <span class="intro-bottom">DAVIDO THE DEVELOPER <img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""> A NEW CHAPTER BEGINS</span>
+  </div>
+
+  <header class="topbar">
+    <a class="wordmark" href="#home" aria-label="David Mutua, home">DM<span>·</span></a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#story">The story</a>
+      <a href="#interests">The good stuff</a>
+      <a href="#memories">The people</a>
+      <a href="#star-game">Catch stars</a>
+    </nav>
+    <button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" aria-label="Turn ambient sound on">
+      <span class="sound-icon" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+      <span class="sound-label">SOUND OFF</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-photo" role="img" aria-label="Golden evening light over a mountain landscape"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow"><span class="live-dot"></span> A NEW CHAPTER, PREMIERING SOON</p>
+        <p class="hero-date">10 <span>/</span> 10 <span>/</span> 2026</p>
+        <h1 id="hero-title">DAVID<br><span>MUTUA</span><b class="hero-period">.</b></h1>
+        <div class="hero-foot">
+          <p><strong class="hero-brand">DAVIDO THE DEVELOPER</strong><br>A life still unfolding.</p>
+          <a href="#story" class="scroll-link"><span>SCROLL TO EXPLORE</span><span class="scroll-arrow" aria-hidden="true">↓</span></a>
+        </div>
+      </div>
+      <div class="hero-index" aria-hidden="true">01 — THE NEXT CHAPTER</div>
+      <div class="hero-stamp" aria-hidden="true"><span>MADE OF</span><strong>WHAT'S<br>NEXT</strong><i><img class="flower-face flower-face-small" src="images/david-mutua.jpg" alt=""></i></div>
+    </section>
+
+    <section class="portrait-section section-pad" id="portrait" aria-labelledby="portrait-title">
+      <div class="portrait-copy">
+        <p class="eyebrow"><span><img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""></span> — A FACE TO THE NAME</p>
+        <h2 id="portrait-title">The person<br>behind <em>the day.</em></h2>
+        <p>One more year, a lot to be grateful for, and a whole new chapter ahead. Thanks for being part of the story.</p>
+        <span class="portrait-signature">DAVIDO THE DEVELOPER</span>
+      </div>
+      <figure class="portrait-frame">
+        <div class="portrait-placeholder" aria-hidden="true"><span class="portrait-monogram">DM</span><span class="portrait-placeholder-name">DAVID MUTUA</span><span class="portrait-placeholder-date">10 · 10 · 2026</span><i><img class="flower-face flower-face-small" src="images/david-mutua.jpg" alt=""></i></div>
+        <img class="portrait-image" src="images/david-mutua.jpg" alt="David Mutua celebrating his birthday" loading="lazy">
+        <figcaption>DAVID MUTUA <span>·</span> A NEW CHAPTER</figcaption>
+      </figure>
+    </section>
+
+    <section class="countdown-band" aria-label="Birthday countdown">
+      <div class="countdown-copy"><span class="eyebrow">THE BIG DAY</span><span class="countdown-note" id="countdown-note">The countdown is on.</span></div>
+      <div class="countdown" id="countdown" aria-live="off">
+        <div><strong id="days">00</strong><span>DAYS</span></div><b>:</b>
+        <div><strong id="hours">00</strong><span>HOURS</span></div><b>:</b>
+        <div><strong id="minutes">00</strong><span>MINUTES</span></div><b>:</b>
+        <div><strong id="seconds">00</strong><span>SECONDS</span></div>
+        <p class="countdown-today" id="countdown-today" hidden></p>
+      </div>
+      <span class="countdown-spark" aria-hidden="true"><img class="flower-face flower-face-small" src="images/david-mutua.jpg" alt=""></span>
+    </section>
+
+    <section class="story section-pad" id="story" aria-labelledby="story-title">
+      <div class="section-heading">
+        <p class="eyebrow"><span>01</span> — THE MAKING OF ME</p>
+        <h2 id="story-title">Every version<br>got me <em>here.</em></h2>
+      </div>
+      <div class="story-intro">
+        <p class="story-lede">Not a straight line. More like good people, unexpected turns, and the little moments that make a life your own.</p>
+        <span class="hand-note">still becoming <b>↘</b></span>
+      </div>
+      <div class="timeline">
+        <article class="timeline-item" role="button" tabindex="0" aria-expanded="false"><span class="timeline-no">01</span><div><h3>Where it all began</h3><p>Familiar places, first memories, and the people who made them special.</p><span class="timeline-detail" hidden>The beginning of every good story is being surrounded by people who care.</span></div><span class="timeline-mark"><img class="flower-face flower-face-small" src="images/david-mutua.jpg" alt=""></span></article>
+        <article class="timeline-item" role="button" tabindex="0" aria-expanded="false"><span class="timeline-no">02</span><div><h3>Finding my people</h3><p>Good friends, shared jokes, and memories made along the way.</p><span class="timeline-detail" hidden>Some of my favorite memories are the unplanned ones, made with my favorite people.</span></div><span class="timeline-mark">↗</span></article>
+        <article class="timeline-item" role="button" tabindex="0" aria-expanded="false"><span class="timeline-no">03</span><div><h3>Making my own way</h3><p>New places, fresh starts, and finding a rhythm that feels like mine.</p><span class="timeline-detail" hidden>Every new chapter is a chance to choose what matters and make it my own.</span></div><span class="timeline-mark">◎</span></article>
+        <article class="timeline-item" role="button" tabindex="0" aria-expanded="false"><span class="timeline-no">04</span><div><h3>The little things</h3><p>Ordinary days, unexpected turns, and small wins worth celebrating.</p><span class="timeline-detail" hidden>A good meal, a long laugh, a message at the right time. That's the good stuff.</span></div><span class="timeline-mark">✦</span></article>
+        <article class="timeline-item timeline-today" role="button" tabindex="0" aria-expanded="false"><span class="timeline-no">NOW</span><div><h3>On to what's next</h3><p>Grateful for the people and moments that brought me here.</p><span class="timeline-detail" hidden>Here's to more joy, more connection, and whatever wonderful thing comes next.</span></div><span class="timeline-mark">✧</span></article>
+      </div>
+    </section>
+
+    <section class="interests section-pad" id="interests" aria-labelledby="interests-title">
+      <div class="interests-top">
+        <div><p class="eyebrow"><span>02</span> — THE GOOD STUFF</p><h2 id="interests-title">A good<br><em>day looks like.</em></h2></div>
+        <p class="interests-note">The people, places, and simple pleasures that make the everyday feel like something special.</p>
+      </div>
+      <div class="interest-grid">
+        <article class="interest-card interest-python"><span class="interest-num">01 / TOGETHER</span><span class="interest-symbol">♡</span><h3>My people</h3><p>Familiar faces and the easy kind of laughter.</p><span class="card-arrow" aria-hidden="true">↗</span></article>
+        <article class="interest-card interest-data"><span class="interest-num">02 / SOUNDTRACK</span><span class="interest-symbol">♫</span><h3>A good playlist</h3><p>The right song can turn a day around.</p><span class="card-arrow" aria-hidden="true">↗</span></article>
+        <article class="interest-card interest-ai"><span class="interest-num">03 / OUT THERE</span><span class="interest-symbol"><img class="flower-face flower-face-small" src="images/david-mutua.jpg" alt=""></span><h3>Little adventures</h3><p>New corners, open roads, and room to wander.</p><span class="card-arrow" aria-hidden="true">↗</span></article>
+        <article class="interest-card interest-cloud"><span class="interest-num">04 / SLOW DOWN</span><span class="interest-symbol">☼</span><h3>Quiet moments</h3><p>A breath, a reset, a little time to myself.</p><span class="card-arrow" aria-hidden="true">↗</span></article>
+        <article class="interest-card interest-web"><span class="interest-num">05 / GOOD TASTE</span><span class="interest-symbol">♡</span><h3>A proper meal</h3><p>Good food, no rush, even better company.</p><span class="card-arrow" aria-hidden="true">↗</span></article>
+        <article class="interest-card interest-cs"><span class="interest-num">06 / THE LITTLE WINS</span><span class="interest-symbol">✦</span><h3>Everyday joy</h3><p>Small things that make a good day great.</p><span class="card-arrow" aria-hidden="true">↗</span></article>
+      </div>
+    </section>
+
+    <section class="quotes section-pad" aria-labelledby="quotes-title">
+      <div class="quotes-heading"><p class="eyebrow"><span><img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""></span> — NOTES FROM THE BUILD</p><h2 id="quotes-title">A few things<br>I <em>believe.</em></h2></div>
+      <div class="quote-list">
+        <blockquote class="quote-card quote-featured"><span class="quote-mark" aria-hidden="true">“</span><p>Technology matters most when it makes someone's everyday a little <em>better.</em></p><footer>DAVID MUTUA <span>— ON BUILDING WITH PURPOSE</span></footer><span class="quote-index">01</span></blockquote>
+        <blockquote class="quote-card"><span class="quote-index">02</span><p>I don't just want to understand how things work. I want to build what could work <em>better.</em></p><footer>DAVID MUTUA <span>— ON CURIOSITY</span></footer></blockquote>
+        <blockquote class="quote-card"><span class="quote-index">03</span><p>Data shows us what happened. Curiosity helps us ask what should happen <em>next.</em></p><footer>DAVID MUTUA <span>— ON LOOKING AHEAD</span></footer></blockquote>
+      </div>
+      <p class="quotes-signoff">THOUGHTS I'M TAKING INTO THE NEXT CHAPTER. <span><img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""></span></p>
+    </section>
+
+    <section class="bloom section-pad" id="bloom" aria-labelledby="bloom-title">
+      <div class="bloom-heading">
+        <div><p class="eyebrow"><span><img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""></span> — A LITTLE ROOM TO GROW</p><h2 id="bloom-title">Here's to<br>what's <em>in bloom.</em></h2></div>
+        <p>New ideas. Good people. A hundred small things worth being here for. Here's to making space for all of it.</p>
+      </div>
+      <div class="bloom-gallery">
+        <button class="birthday-bloom-card bloom-tone-rose" type="button" aria-expanded="false" aria-label="Open birthday flower 1">
+          <span class="bloom-card-cover"><span class="bloom-card-number">01</span><span class="bloom-card-flower" aria-hidden="true">✿</span><span class="bloom-card-label">A WISH FOR JOY</span><span class="bloom-card-action">PRESS TO OPEN <b>↗</b></span></span>
+          <span class="bloom-card-reveal" hidden><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=85" alt="A cheerful bouquet of colorful flowers" loading="lazy"><span class="bloom-card-caption">May this year bring color to every ordinary day.</span><span class="bloom-card-action">CLOSE <b>×</b></span></span>
+        </button>
+        <button class="birthday-bloom-card bloom-tone-lime" type="button" aria-expanded="false" aria-label="Open birthday flower 2">
+          <span class="bloom-card-cover"><span class="bloom-card-number">02</span><span class="bloom-card-flower" aria-hidden="true">✿</span><span class="bloom-card-label">A WISH FOR PEACE</span><span class="bloom-card-action">PRESS TO OPEN <b>↗</b></span></span>
+          <span class="bloom-card-reveal" hidden><img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?auto=format&fit=crop&w=900&q=85" alt="Pink blossoms glowing in the afternoon light" loading="lazy"><span class="bloom-card-caption">Room to breathe, slow down, and enjoy the moment.</span><span class="bloom-card-action">CLOSE <b>×</b></span></span>
+        </button>
+        <button class="birthday-bloom-card bloom-tone-sky" type="button" aria-expanded="false" aria-label="Open birthday flower 3">
+          <span class="bloom-card-cover"><span class="bloom-card-number">03</span><span class="bloom-card-flower" aria-hidden="true">✿</span><span class="bloom-card-label">A WISH FOR ADVENTURE</span><span class="bloom-card-action">PRESS TO OPEN <b>↗</b></span></span>
+          <span class="bloom-card-reveal" hidden><img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=900&q=85" alt="A field of flowers stretching into the distance" loading="lazy"><span class="bloom-card-caption">New places, good surprises, and stories worth retelling.</span><span class="bloom-card-action">CLOSE <b>×</b></span></span>
+        </button>
+        <button class="birthday-bloom-card bloom-tone-sky" type="button" aria-expanded="false" aria-label="Open birthday flower 4">
+          <span class="bloom-card-cover"><span class="bloom-card-number">04</span><span class="bloom-card-flower" aria-hidden="true">✿</span><span class="bloom-card-label">A WISH FOR LAUGHTER</span><span class="bloom-card-action">PRESS TO OPEN <b>↗</b></span></span>
+          <span class="bloom-card-reveal" hidden><img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=900&q=85" alt="Bright flowers gathered into a joyful bouquet" loading="lazy"><span class="bloom-card-caption">More belly laughs with the people who feel like home.</span><span class="bloom-card-action">CLOSE <b>×</b></span></span>
+        </button>
+        <button class="birthday-bloom-card bloom-tone-rose" type="button" aria-expanded="false" aria-label="Open birthday flower 5">
+          <span class="bloom-card-cover"><span class="bloom-card-number">05</span><span class="bloom-card-flower" aria-hidden="true">✿</span><span class="bloom-card-label">A WISH FOR LOVE</span><span class="bloom-card-action">PRESS TO OPEN <b>↗</b></span></span>
+          <span class="bloom-card-reveal" hidden><img src="https://images.unsplash.com/photo-1457089328109-e5d9bd499191?auto=format&fit=crop&w=900&q=85" alt="Soft pink flowers in warm sunshine" loading="lazy"><span class="bloom-card-caption">A year full of love given freely and returned often.</span><span class="bloom-card-action">CLOSE <b>×</b></span></span>
+        </button>
+        <button class="birthday-bloom-card bloom-tone-lime" type="button" aria-expanded="false" aria-label="Open birthday flower 6">
+          <span class="bloom-card-cover"><span class="bloom-card-number">06</span><span class="bloom-card-flower" aria-hidden="true">✿</span><span class="bloom-card-label">A WISH FOR WHAT'S NEXT</span><span class="bloom-card-action">PRESS TO OPEN <b>↗</b></span></span>
+          <span class="bloom-card-reveal" hidden><img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=900&q=85" alt="A bright field of flowers in full bloom" loading="lazy"><span class="bloom-card-caption">Here's to the best chapter yet. Happy birthday, David.</span><span class="bloom-card-action">CLOSE <b>×</b></span></span>
+        </button>
+      </div>
+      <div class="bloom-footer"><span>TAKE THE LONG WAY. STOP FOR THE FLOWERS.</span><span class="bloom-footer-faces" aria-hidden="true"><img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""><img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""><img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""></span></div>
+    </section>
+
+    <section class="memories section-pad" id="memories" aria-labelledby="memories-title">
+      <div class="memories-heading">
+        <div><p class="eyebrow"><span>03</span> — BETTER, TOGETHER</p><h2 id="memories-title">The people<br>make the <em>story.</em></h2></div>
+        <p class="memories-note">To family, friends, mentors, and every person who showed up along the way: this chapter has your fingerprints on it, too.</p>
+      </div>
+      <div class="photo-grid">
+        <button class="photo-tile photo-one" type="button" data-full="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=1800&q=85" data-caption="The best moments are the ones shared." aria-label="Open photograph of friends celebrating">
+          <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=80" alt="Friends raising glasses together at a celebration" loading="lazy"><span class="photo-caption">The good kind of loud.</span><span class="photo-open" aria-hidden="true">↗</span>
+        </button>
+        <button class="photo-tile photo-two" type="button" data-full="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=1800&q=85" data-caption="Here's to the people who feel like home." aria-label="Open photograph of friends together">
+          <img src="https://images.unsplash.com/photo-1511988617509-a57c8a288659?auto=format&fit=crop&w=900&q=80" alt="Friends sharing a joyful moment outdoors" loading="lazy"><span class="photo-caption">My kind of people.</span><span class="photo-open" aria-hidden="true">↗</span>
+        </button>
+        <div class="photo-message"><span class="photo-star"><img class="flower-face flower-face-small" src="images/david-mutua.jpg" alt=""></span><p>For every laugh,<br>every check-in,<br>every <em>“you've got this.”</em></p><span class="photo-signoff">YOU KNOW WHO YOU ARE.</span></div>
+        <button class="photo-tile photo-three" type="button" data-full="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=1800&q=85" data-caption="A little celebration, a lot of love." aria-label="Open photograph of a table set for a celebration">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&w=900&q=80" alt="A beautifully lit table ready for a celebration" loading="lazy"><span class="photo-caption">Save me a seat.</span><span class="photo-open" aria-hidden="true">↗</span>
+        </button>
+      </div>
+      <p class="photo-disclaimer">THESE ARE PLACEHOLDER MEMORIES. SWAP IN YOUR OWN PHOTOS WHEN YOU'RE READY.</p>
+    </section>
+
+    <section class="star-game section-pad" id="star-game" aria-labelledby="star-game-title">
+      <div class="game-heading"><p class="eyebrow"><span>✦</span> — A LITTLE BIRTHDAY GAME</p><h2 id="star-game-title">Catch the<br><em>good stuff.</em></h2><p>Find all ten stars. It's your perfect 10/10.</p></div>
+      <div class="game-panel">
+        <div class="game-panel-top"><span>STAR FIELD</span><span><b id="game-score">00</b> / 10</span></div>
+        <div class="star-field" id="star-field" aria-label="Star catching game">
+          <button class="game-star star-1" type="button" aria-label="Collect star 1">✦</button>
+          <button class="game-star star-2" type="button" aria-label="Collect star 2">✦</button>
+          <button class="game-star star-3" type="button" aria-label="Collect star 3">✦</button>
+          <button class="game-star star-4" type="button" aria-label="Collect star 4">✦</button>
+          <button class="game-star star-5" type="button" aria-label="Collect star 5">✦</button>
+          <button class="game-star star-6" type="button" aria-label="Collect star 6">✦</button>
+          <button class="game-star star-7" type="button" aria-label="Collect star 7">✦</button>
+          <button class="game-star star-8" type="button" aria-label="Collect star 8">✦</button>
+          <button class="game-star star-9" type="button" aria-label="Collect star 9">✦</button>
+          <button class="game-star star-10" type="button" aria-label="Collect star 10">✦</button>
+        </div>
+        <div class="game-panel-bottom"><span id="game-message" aria-live="polite">Tap each star to collect it.</span><button id="game-reset" type="button" aria-label="Reset star game">RESET ↻</button></div>
+      </div>
+    </section>
+
+    <section class="next-chapter" aria-labelledby="chapter-title">
+      <div class="chapter-orbit" aria-hidden="true"><span><img class="flower-face flower-face-small" src="images/david-mutua.jpg" alt=""></span><span>✦</span><span><img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""></span></div>
+      <p class="eyebrow">10.10.2026 — PAGE TURNING</p>
+      <h2 id="chapter-title">Chapter<br><span>loading<span class="loading-dots">...</span></span></h2>
+      <p class="chapter-sub">The next part is unwritten. That's the exciting bit.</p>
+      <span class="chapter-age">AGE: STILL A MYSTERY&nbsp; <img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""></span>
+    </section>
+
+    <section class="reveal section-pad" id="reveal" aria-labelledby="reveal-title">
+      <div class="reveal-copy"><p class="eyebrow"><span>04</span> — THE REASON WE'RE HERE</p><h2 id="reveal-title">Make a little<br><em>noise.</em></h2><p>For the late nights, the small wins, the plot twists, and all the good still on its way.</p><button class="celebrate-button" id="celebrate-button" type="button"><span aria-hidden="true"><img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""></span> LET'S CELEBRATE <span aria-hidden="true">↗</span></button></div>
+      <div class="birthday-number" aria-label="10 slash 10"><span>10</span><i>/</i><span>10</span><b class="number-spark spark-a"><img class="flower-face flower-face-small" src="images/david-mutua.jpg" alt=""></b><b class="number-spark spark-b">✦</b><b class="number-spark spark-c"><img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""></b></div>
+      <div class="birthday-balloons" aria-label="Pop a birthday balloon">
+        <button class="birthday-balloon balloon-coral" type="button" aria-label="Pop coral balloon"> <span></span></button>
+        <button class="birthday-balloon balloon-yellow" type="button" aria-label="Pop yellow balloon"><span></span></button>
+        <button class="birthday-balloon balloon-teal" type="button" aria-label="Pop teal balloon"><span></span></button>
+        <button class="birthday-balloon balloon-pink" type="button" aria-label="Pop pink balloon"><span></span></button>
+      </div>
+      <p class="celebrate-status" id="celebrate-status" aria-live="polite"></p>
+    </section>
+
+    <section class="finale" aria-label="Birthday wish"><div class="finale-rule"></div><p class="eyebrow">A NOTE TO FUTURE ME</p><p class="finale-line">This is only<br>the <em>beginning.</em></p><button class="wish-button" id="wish-button" type="button"><span aria-hidden="true">✦</span> MAKE A WISH <span aria-hidden="true">↗</span></button><p class="wish-status" id="wish-status" aria-live="polite"></p><div class="finale-bottom"><span>10 / 10 / 2026</span><span>MAKE IT COUNT <b><img class="flower-face flower-face-tiny" src="images/david-mutua.jpg" alt=""></b></span><span>WITH LOVE, DAVID</span></div></section>
+  </main>
+
+  <footer class="footer"><a class="wordmark" href="#home" aria-label="Back to top">DM<span>·</span></a><span class="footer-brand">DAVIDO THE DEVELOPER</span><a class="phone-link" href="tel:0716275226" aria-label="Call DAVIDO THE DEVELOPER at 0716275226">0716275226</a><a href="#home" class="back-top">BACK TO TOP ↑</a></footer>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Memory photograph"><button class="lightbox-close" id="lightbox-close" type="button" aria-label="Close photograph">×</button><img id="lightbox-image" alt=""><p id="lightbox-caption"></p></dialog>
+  <canvas class="effects-canvas" id="effects-canvas" aria-hidden="true"></canvas>
+  <div class="shooting-star" id="shooting-star" aria-hidden="true">✦</div>
+</body>
+</html>
